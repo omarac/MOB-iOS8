@@ -162,7 +162,8 @@
                                     <constraint firstAttribute="height" constant="150" id="XzN-qp-IhP"/>
                                 </constraints>
                                 <string key="text">My goal is to be able to develop in iOS so that I can develop my own application ideas and use this knowledge to grow my business.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="42116381_scaled_224x168.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jJW-jv-Pc8">
