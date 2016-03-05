@@ -25,7 +25,7 @@ class Exercise5ViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
         let label = cell.viewWithTag(500) as! UILabel
-        label.text = "\(indexPath.row + 1)"
+        label.text = "Row \(indexPath.row + 1)"
         
         return cell
         
