@@ -31,6 +31,10 @@ class ViewController: UIViewController {
         addButton.layer.borderWidth = 0.25
     }
     
+    func clearOnNumClick(){
+        clearButton.setTitle("C", forState: .Normal)
+    }
+    
     var total = Double(0)
     var current = Double(0)
     var option = 0
@@ -77,8 +81,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func zeroClick(sender: AnyObject) {
+        
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(0)
         displayLabel.text = String (format: "%g",current)
@@ -86,7 +91,7 @@ class ViewController: UIViewController {
     
     @IBAction func oneClick(sender: AnyObject){
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(1)
         displayLabel.text = String (format: "%g",current)
@@ -95,7 +100,7 @@ class ViewController: UIViewController {
     
     @IBAction func twoClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(2)
         displayLabel.text = String (format: "%g",current)
@@ -103,14 +108,14 @@ class ViewController: UIViewController {
 
     @IBAction func threeClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(3)
         displayLabel.text = String (format: "%g",current)
     }
     @IBAction func fourClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(4)
         displayLabel.text = String (format: "%g",current)
@@ -118,7 +123,7 @@ class ViewController: UIViewController {
     
     @IBAction func fiveClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(5)
         displayLabel.text = String (format: "%g",current)
@@ -126,7 +131,7 @@ class ViewController: UIViewController {
     
     @IBAction func sixClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(6)
         displayLabel.text = String (format: "%g",current)
@@ -134,7 +139,7 @@ class ViewController: UIViewController {
     
     @IBAction func sevenClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(7)
         displayLabel.text = String (format: "%g",current)
@@ -142,7 +147,7 @@ class ViewController: UIViewController {
     
     @IBAction func eightClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(8)
         displayLabel.text = String (format: "%g",current)
@@ -150,7 +155,7 @@ class ViewController: UIViewController {
     
     @IBAction func nineClick(sender: AnyObject) {
         numBorderChange()
-        clearButton.setTitle("C", forState: .Normal)
+        clearOnNumClick()
         current = current * Double(10)
         current = current + Double(9)
         displayLabel.text = String (format: "%g",current)
@@ -413,7 +418,7 @@ if total == 0 {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         
         //    0 Border
         zeroButton.layer.borderWidth = 0.25
